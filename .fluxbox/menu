@@ -1,0 +1,83 @@
+[begin] (beastmode!)
+[exec] (browser) {/opt/google/chrome/google-chrome} </opt/google/chrome/product_logo_32.xpm>
+[exec] (idea) {idea} <>
+[exec] (clion) {clion} <>
+[exec] (nvidia) {gksudo nvidia-settings} <>
+[exec] (settings) {unity-control-center} <>
+[exec] (virtualbox) {/usr/bin/virtualbox} <>
+
+# see xrandr
+[separator]
+  [submenu] (brightness) {}
+    [exec] (10) {brightness 0 4}
+    [exec] (9)  {brightness 9 4}
+    [exec] (8)  {brightness 8 4}
+    [exec] (7)  {brightness 7 4}
+    [exec] (6)  {brightness 6 4}
+    [exec] (5)  {brightness 5 4}
+    [exec] (4)  {brightness 4 4}
+    [exec] (3)  {brightness 3 4}
+    [exec] (2)  {brightness 2 4}
+    [exec] (1)  {brightness 1 4}
+  [end]
+
+[separator]
+[exec] (baobab) {/usr/bin/baobab} </usr/share/pixmaps/baobab.xpm>
+[exec] (GIMP) {/usr/bin/gimp} </usr/share/pixmaps/gimp.xpm>
+[exec] (java settings) {jcontrol} <>
+[exec] (krita!) {krita} <>
+[exec] (pavucontrol) {/usr/bin/pavucontrol} <>
+[exec] (screenshot) {/home/jfaust/bin/screenshot} <>
+
+[separator]
+  [submenu] (programs) {}
+    [exec] (analog clock) {xclock -analog -bg navy -fg orange -highlight orange -norender -face Courier:italic -hands navy} <>
+    [exec] (Baobab) {/usr/bin/baobab} </usr/share/pixmaps/baobab.xpm>
+    [exec] (Bc) { x-terminal-emulator -T "Bc" -e /usr/bin/bc} <>
+    [exec] (Dc) { x-terminal-emulator -T "Dc" -e /usr/bin/dc} <>
+    [exec] (digital clock) {xclock -digital -bg navy -fg orange -update 1 -highlight orange -norender -face Courier:italic -hands navy} <>
+    [exec] (Editres) {editres} <>
+    [exec] (fix sound) {gksudo alsa force-reload} </usr/share/pixmaps/faces/dice.jpg>
+    [exec] (GDB) { x-terminal-emulator -T "GDB" -e /usr/bin/gdb} <>
+    [exec] (Info) { x-terminal-emulator -T "Info" -e info} <>
+    [exec] (Oclock) {oclock} <>
+    [exec] (pavucontrol) {/usr/bin/pavucontrol} <>
+    [exec] (pppconfig) { x-terminal-emulator -T "pppconfig" -e su-to-root -c /usr/sbin/pppconfig} <>
+    [exec] (Pstree) { x-terminal-emulator -T "Pstree" -e /usr/bin/pstree.x11} </usr/share/pixmaps/pstree16.xpm>
+    [exec] (Remmina) {/usr/bin/remmina} <>
+    [exec] (Shotwell) {/usr/bin/shotwell} <>
+    [exec] (Telnet) { x-terminal-emulator -T "Telnet" -e /usr/bin/telnet.netkit} <>
+    [exec] (Top) { x-terminal-emulator -T "Top" -e /usr/bin/top} <>
+    [exec] (transmission) {/usr/bin/transmission-gtk} </usr/share/pixmaps/transmission.xpm>
+    [exec] (Xcalc) {xcalc} <>
+    [exec] (Xclipboard) {xclipboard} <>
+    [exec] (Xconsole) {xconsole -file /dev/xconsole} <>
+    [exec] (Xev) {x-terminal-emulator -e xev} <>
+    [exec] (Xeyes) {xeyes} <>
+    [exec] (Xkill) {xkill} <>
+    [exec] (Xman) {xman} <>
+    [exec] (XTerm (Unicode\)) {uxterm} </usr/share/pixmaps/xterm-color_32x32.xpm>
+    [exec] (XTerm) {xterm} </usr/share/pixmaps/xterm-color_32x32.xpm>
+  [end]
+
+[separator]
+[reconfig] (Reconfigure)
+[config] (Configuration)
+[restart] (Restart)
+[exec] (Xrefresh) {xrefresh} <>
+
+[submenu] (Styles) {} </usr/share/pixmaps/display-im6.q16.xpm>
+  [wallpapers] (~/pic/bg)
+
+[separator]
+  [stylesdir] (~/.fluxbox/styles)
+[end]
+
+[workspaces] (Workspaces) </usr/share/pixmaps/language-selector.png>
+
+[separator]
+[exit] (Log out)
+[exec] (Suspend) { gksudo pm-suspend } <>
+[exec] (Reboot) { shutdown -r now }
+[exec] (Shutdown) { shutdown -h now } <>
+[end]

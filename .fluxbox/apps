@@ -1,0 +1,29 @@
+[app] (name=fbrun)
+  [Position]	(UPPERLEFT)	{19% 4%}
+[end]
+[app] (name=gnome-terminal-server) (class=Gnome-terminal)
+  [Deco]	{NONE}
+[end]
+[app] (name=google-chrome) (class=Google-chrome) (role=browser)
+  [Deco]	{NORMAL}
+[end]
+[app] (class=Google-chrome) (role=pop-up)
+  [Deco]	{NONE}
+[end]
+[app] (name=sun-awt-X11-XFramePeer) (class=jetbrains-idea)
+  [Deco]	{NORMAL}
+[end]
+[app] (name=feh) (class=feh)
+  [Deco]	{NORMAL}
+[end]
+[app] (name=zoom) (class=zoom)
+[end]
+[app] (name=sun-awt-X11-XFramePeer) (class=jetbrains-clion)
+  [Deco]	{NORMAL}
+[end]
+[app] (name=gimp) (class=Gimp) (role=gimp-image-window)
+  [Deco]	{NORMAL}
+[end]
+[app] (name=krusader) (class=Krusader) (role=MainWindow#1)
+  [Deco]	{NORMAL}
+[end]

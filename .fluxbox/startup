@@ -1,0 +1,6 @@
+#!/bin/sh
+parcellite &
+
+exec fluxbox
+# enable logs
+# exec fluxbox -log "/home/jfaust/.fluxbox/log"
