@@ -38,5 +38,7 @@ alias rev='git reset'
 alias rgm='git pull gold master'
 alias st='git status --short --branch'
 alias sts='git status'
+# equiv to $ git branch --set-upstream-to=<remote>/<branch> <local branch>
+alias upstream='git branch -u' # gold/master master; 
 alias vaporize='git clean -f'
 
